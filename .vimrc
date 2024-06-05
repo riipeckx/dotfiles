@@ -1,6 +1,9 @@
 filetype on
 syntax on
 set number
-set cursorline
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
+set softtabstop=0
+set autoindent
+set smarttab
