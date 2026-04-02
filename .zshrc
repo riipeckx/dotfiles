@@ -1,10 +1,8 @@
 # Exports
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export ZSH="$HOME/.oh-my-zsh"
-export GID=998
 export SPACESHIP_CONFIG_FILE="$HOME/.config/spaceship.zsh"
 export LANG=en_US.UTF-8
-export ARCHFLAGS="-arch x86_64"
 export EDITOR=vim
 export ZSH_THEME="spaceship"
 export COMPLETION_WAITING_DOTS="false"
@@ -21,8 +19,13 @@ unsetopt correct
 
 # Source
 source $ZSH/oh-my-zsh.sh
-source /usr/bin/aws_zsh_completer.sh
+source <(pip3 completion --zsh)
 source <(kubectl completion zsh)
+source <(gh completion -s zsh)
+source <(mise completion zsh)
+eval "$(mise activate zsh)"
+source <(dagger completion zsh)
+source /usr/bin/aws_zsh_completer.sh
 source <(kind completion zsh)
 source <(okteto completion zsh)
 source <(kustomize completion zsh)
@@ -36,12 +39,23 @@ SPACESHIP_KUBECTL_CONTEXT_COLOR_GROUPS=(
   red    '\(kube-system)$'
 )
 
-# ALIASES
+# Functions
+aws-sso-login() {
+  if [[ -z "${AWS_PROFILE}" ]]; then
+    echo -e "AWS_PROFILE not set!"
+  else
+    aws sso login --profile $AWS_PROFILE
+  fi
+}
+
+# Aliases
 alias zshconfig="vim ~/.zshrc"
-alias ohmyzsh="code ~/.oh-my-zsh"
+alias ohmyzsh="vim ~/.oh-my-zsh"
 alias ll="ls -ahl"
 alias k="kubectl"
 alias cilium="cilium-cli"
 alias t="terraform"
 alias ip="ip -color=auto"
-alias soan="cd ~/Documents/soan/git"
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/bin/terraform terraform
