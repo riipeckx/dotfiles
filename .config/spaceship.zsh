@@ -1,4 +1,3 @@
-
 # ORDER
 SPACESHIP_PROMPT_ORDER=(
   user
