@@ -50,20 +50,6 @@
   "aws.telemetry": false,
   "chat.agent.maxRequests": 100,
   "chat.tools.autoApprove": true,
-  "chat.tools.terminal.autoApprove": {
-    "./deploy/cli.sh": true,
-    "./gradlew": true,
-    "/dev/null": true,
-    "cd /home/vmercier/workspace/git/tf1-12/analytics-live-analytics && git add -A && git commit -m \"feat(ITSRE-12687): upgrade Terraform to 1.12 and AWS provider to 6.2.0\" && git push -u origin feat/ITSRE-12687-upgrade-terraform": {
-      "approve": true,
-      "matchCommandLine": true
-    },
-    "git add": true,
-    "git checkout": true,
-    "git commit": true,
-    "git ls-remote": true,
-    "git push": true
-  },
   "chat.viewSessions.orientation": "stacked",
   "diffEditor.ignoreTrimWhitespace": true,
   "docker.extension.dockerEngineAvailabilityPrompt": false,
