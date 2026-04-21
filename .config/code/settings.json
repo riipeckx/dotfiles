@@ -1,0 +1,163 @@
+{
+  "[dockercompose]": {
+    "editor.autoIndent": "advanced",
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+    "editor.insertSpaces": true,
+    "editor.quickSuggestions": {
+      "comments": false,
+      "other": true,
+      "strings": true
+    },
+    "editor.tabSize": 2
+  },
+  "[dockerfile]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[sql]": {
+    "editor.defaultFormatter": "inferrinizzard.prettier-sql-vscode"
+  },
+  "[terraform-vars]": {
+    "editor.defaultFormatter": "hashicorp.terraform",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file"
+  },
+  "[terraform]": {
+    "editor.defaultFormatter": "hashicorp.terraform",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file"
+  },
+  "[terragrunt]": {
+    "editor.defaultFormatter": "hashicorp.terraform",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "aws.cloudformation.telemetry.enabled": false,
+  "aws.telemetry": false,
+  "chat.agent.maxRequests": 100,
+  "chat.tools.autoApprove": true,
+  "chat.tools.terminal.autoApprove": {
+    "./deploy/cli.sh": true,
+    "./gradlew": true,
+    "/dev/null": true,
+    "cd /home/vmercier/workspace/git/tf1-12/analytics-live-analytics && git add -A && git commit -m \"feat(ITSRE-12687): upgrade Terraform to 1.12 and AWS provider to 6.2.0\" && git push -u origin feat/ITSRE-12687-upgrade-terraform": {
+      "approve": true,
+      "matchCommandLine": true
+    },
+    "git add": true,
+    "git checkout": true,
+    "git commit": true,
+    "git ls-remote": true,
+    "git push": true
+  },
+  "chat.viewSessions.orientation": "stacked",
+  "diffEditor.ignoreTrimWhitespace": true,
+  "docker.extension.dockerEngineAvailabilityPrompt": false,
+  "docker.extension.enableComposeLanguageServer": false,
+  "editor.defaultFormatter": "ms-azuretools.vscode-docker",
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontSize": 16,
+  "editor.formatOnSave": true,
+  "editor.suggest.preview": true,
+  "editor.tabSize": 2,
+  "explorer.confirmDragAndDrop": false,
+  "files.associations": {
+    "*.yaml": "yaml"
+  },
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableCommitSigning": true,
+  "git.openRepositoryInParentFolders": "never",
+  "github.copilot.advanced": {},
+  "github.copilot.enable": {
+    "*": true,
+    "markdown": true,
+    "plaintext": false,
+    "scminput": false
+  },
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "github.copilot.selectedCompletionModel": "gpt-4o-copilot",
+  "githubPullRequests.notifications": "pullRequests",
+  "githubPullRequests.pullBranch": "never",
+  "githubPullRequests.terminalLinksHandler": "github",
+  "makefile.configureOnOpen": true,
+  "mdb.mcp.server": "prompt",
+  "redhat.telemetry.enabled": false,
+  "scm.showHistoryGraph": false,
+  "security.allowedUNCHosts": [
+    "wsl.localhost"
+  ],
+  "security.workspace.trust.untrustedFiles": "open",
+  "terminal.integrated.fontFamily": "JetBrains Mono",
+  "terminal.integrated.fontLigatures.enabled": true,
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.initialHint": false,
+  "terminal.integrated.scrollback": 100000000,
+  "terminal.integrated.smoothScrolling": true,
+  "terminal.integrated.stickyScroll.enabled": false,
+  "vscode-pokemon.defaultPokemon": [
+    {
+      "color": "default",
+      "generation": "gen1",
+      "name": "Pikachu",
+      "originalSpriteSize": 32,
+      "size": "medium",
+      "type": "pikachu"
+    },
+    {
+      "color": "default",
+      "generation": "gen1",
+      "name": "Bulbizarre",
+      "originalSpriteSize": 32,
+      "size": "medium",
+      "type": "bulbasaur"
+    },
+    {
+      "color": "default",
+      "generation": "gen1",
+      "name": "Carapuce",
+      "originalSpriteSize": 32,
+      "size": "medium",
+      "type": "squirtle"
+    },
+    {
+      "color": "default",
+      "generation": "gen1",
+      "name": "Salameche",
+      "originalSpriteSize": 32,
+      "size": "medium",
+      "type": "charmander"
+    }
+  ],
+  // "terraform.languageServer": {
+  //   "args": [
+  //     "serve"
+  //   ],
+  //   "external": true,
+  //   "maxNumberOfProblems": 100,
+  //   "pathToBinary": " /usr/local/bin/terraform",
+  //   "trace.server": "off"
+  // },
+  "window.confirmSaveUntitledWorkspace": false,
+  "window.customMenuBarAltFocus": false,
+  "window.menuBarVisibility": "compact",
+  "window.titleBarStyle": "custom",
+  "workbench.colorTheme": "bulba",
+  "workbench.editor.enablePreview": false,
+  "workbench.sideBar.location": "right",
+  "workbench.startupEditor": "none"
+}
