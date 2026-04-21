@@ -1,0 +1,34 @@
+[
+  {
+    "color": "default",
+    "type": "pikachu",
+    "size": "medium",
+    "name": "Pikachu",
+    "generation": "gen1",
+    "originalSpriteSize": 32
+  },
+  {
+    "color": "default",
+    "type": "bulbasaur",
+    "size": "medium",
+    "name": "Bulbizarre",
+    "generation": "gen1",
+    "originalSpriteSize": 32
+  },
+  {
+    "color": "default",
+    "type": "squirtle",
+    "size": "medium",
+    "name": "Carapuce",
+    "generation": "gen1",
+    "originalSpriteSize": 32
+  },
+  {
+    "color": "default",
+    "type": "charmander",
+    "size": "medium",
+    "name": "Salameche",
+    "generation": "gen1",
+    "originalSpriteSize": 32
+  }
+]
