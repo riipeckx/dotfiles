@@ -1,9 +1,9 @@
 [init]
 	defaultBranch = main
 [user]
-	email = riipeckx@riipeckx.io
+	email = riipeckx@linux.com
 	name = riipeckx
-	signingkey = riipeckx@riipeckx.io
+#	signingkey = riipeckx@riipeckx.io
 # [diff]
 # 	tool = vimdiff
 # [difftool]
@@ -18,9 +18,11 @@
 [credential "https://gist.github.com"]
 	helper = 
 	helper = !/usr/bin/gh auth git-credential
-[commit]
-	gpgsign = true
+#[commit]
+#	gpgsign = true
 [diff]
     tool = vscode
 [difftool "vscode"]
     cmd = code --wait --diff $LOCAL $REMOTE
+[core]
+	excludesfile = ~/.gitignore_global
